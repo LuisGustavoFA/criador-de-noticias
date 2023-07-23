@@ -1,0 +1,1 @@
+# Criador de Notícias
