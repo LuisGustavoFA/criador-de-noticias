@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criador de Notícias</title>
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+  <form class="entradas" action="javascript:criaNoticia()">
+    <input type="text" placeholder="Insira o URL da imagem do banner." id="entrada_banner">
+    <div class="entrada_conteudo_linha">
+      <div class="entrada_conteudo_coluna_esquerda">
+        <input type="text" placeholder="Insira o título da notícia." id="entrada_titulo">
+        <textarea placeholder="Insira o texto da notícia" id="entrada_texto"></textarea>
+      </div>
+      <div class="entrada_conteudo_coluna_direita">
+        <textarea type="text" placeholder="Insira o URL da imagem" id="entrada_imagem"></textarea>
+        <input type="submit" value="Criar notícia" id="entrada_enviar">
+      </div>
+    </div>
+  </form>
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>
