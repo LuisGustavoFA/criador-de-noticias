@@ -32,7 +32,8 @@ header {
 }
 
 .cabecalho_links:hover {
-  background-color: grey;
+  background-color: black;
+  color: white;
 }
 
 main {

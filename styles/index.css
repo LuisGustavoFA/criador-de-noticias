@@ -48,6 +48,23 @@ textarea {
   
 }
 
+#teste {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  height: 40px;
+  width: 80px;
+  font-size: large;
+  border-radius: 10px;
+  box-shadow: 4px 4px 2px black;
+  cursor: pointer;
+}
+
+#teste:hover {
+  background-color: rgb(87, 87, 87);
+  color: white;
+}
+
 .entradas {
   display: flex;
   flex-direction: column;
@@ -108,10 +125,11 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 25%;
 }
 
 #entrada_imagem {
-  height: 75%;
+  height: 76%;
   resize: none;
 }
 
@@ -131,4 +149,40 @@ textarea {
 #entrada_enviar:disabled {
   color: gray;
   cursor: default;
+}
+
+#entrada_titulo, #entrada_texto, #entrada_imagem, #entrada_enviar, #entrada_banner {
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+
+  .entradas {
+    gap: 3px;
+  }
+
+  .entrada_conteudo_linha {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .entrada_conteudo_coluna_esquerda, .entrada_conteudo_coluna_direita {
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+  }
+
+  #entrada_titulo, #entrada_texto, #entrada_imagem, #entrada_enviar, #entrada_banner {
+    height: 90px;
+    font-size: 15px;
+    border-radius: 20px;
+  }
+
+  #entrada_texto:placeholder-shown, #entrada_imagem:placeholder-shown, #entrada_titulo:placeholder-shown, #entrada_banner:placeholder-shown {
+    line-height: 90px;
+    font-size: 15px;
+    text-align: center;
+    text-overflow: ellipsis;
+  }
 }
